@@ -5,6 +5,7 @@ import { appWindow } from '@tauri-apps/api/window';
 
 
 const useWindowStore = defineStore('window', () => {
+    //save window height state
     const windowHeight = ref()
     const getWindowHeight = computed(() => windowHeight.value)
     async function setWindowHeight() {

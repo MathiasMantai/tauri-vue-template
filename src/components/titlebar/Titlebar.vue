@@ -28,7 +28,7 @@
                 </div>
             </li>
             <li 
-                class='hover:bg-[#D41324] px-3 py-1 cursor-pointer group' 
+                class='hover:bg-[#D41324] px-3 py-1 cursor-pointer group flex flex-col justify-center items-center' 
                 @click="closeWindow"
             >
                 <Close />
@@ -40,11 +40,11 @@
 <script setup lang="ts">
     import { appWindow } from '@tauri-apps/api/window'
 
-    import Close from '../assets/Close.vue'
-    import Minimize from '../assets/Minimize.vue'
-    import Maximize from '../assets/Maximize.vue'
-    import UnMaximize from '../assets/UnMaximize.vue'
-    import { useWindowStore } from '../store/windowStore'
+    import Close from './Close.vue'
+    import Minimize from './Minimize.vue'
+    import Maximize from './Maximize.vue'
+    import UnMaximize from './UnMaximize.vue'
+    import { useWindowStore } from '../../store/windowStore'
 
     const props = defineProps<{
         title: string
