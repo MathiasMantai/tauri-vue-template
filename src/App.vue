@@ -1,6 +1,6 @@
 <template>
     <div class="h-[100dvh] z-0 flex flex-col grow bg-white">
-        <Titlebar title="Gaming Planner" />
+        <Titlebar title="Tauri-Vue-Template" />
         <div>
             <RouterView class=""></RouterView>
         </div>
